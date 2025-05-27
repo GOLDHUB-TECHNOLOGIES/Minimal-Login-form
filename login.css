@@ -8,14 +8,14 @@ body {
 
 section {
   display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   font-family: "Poppins", sans-serif;
   width: 90%;
   margin: auto;
   gap: 90px;
   /* justify-content: space-between; */
   padding: 20px;
-  background-color: white;
+  /* background-color: white; */
   margin-top: 50px;
   margin-bottom: 50px;
   height: 600px;
@@ -34,7 +34,7 @@ section {
 }
 
 .div-2 {
-  width: 60%;
+  width: 70%;
   /* margin-right: 0px; */
   font-family: "Poppins", sans-serif;
   position: relative;
