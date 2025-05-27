@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Login</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="login.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <section>
+      <div class="div-1">
+        <form action="">
+          <h1 class="header">Welcome<br>back!</h1>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email address"/>
+              <label for="password">Password</label>
+              <input type="password" placeholder="Enter your Password" id="pswd" />
+              <span class="forpass"><a href=""><u>forgot your password</u></a></span>
+              <button type="submit" class="btn-login" id="btn-login">Login</button>
+              <p>or</p>
+        </form>
+
+        <div class="socials">
+
+          <button>
+            <img src="./Assets/facebook-removebg-preview.png" alt=""></button>
+          </button>
+
+          <button>
+            <img src="./Assets/google.png" alt=""></button>
+          </button>
+
+        </div>
+
+        <footer class="footer">
+          <p>Don't have an account?</p>
+          <a href=""><button>Create an account</button></a>
+        </footer>
+      </div>
+
+      <div class="div-2">
+        <img src="./Assets/fredrik-solli-wandem-DeqrCRTSbPQ-unsplash.jpg" alt="flower">
+        <p>Fresh flowers<br>for any special occasion</p>
+      </div>
+    </section>
+
+
+
+    <script>
+
+    const emailInput = document.getElementById("email").value;
+    const passwordInput = document.getElementById("pswd").value;
+
+    // const validEmail = "appclick@gmail.com";
+    // const validPassword = "1234AppClick";
+
+    const validEmail = emailInput.validEmail
+    const validPassword = passwordInput.validPassword
+
+    document.getElementById("btn-login").addEventListener("click", function() {
+      if (validEmail === "appclick@gmail.com" && validPassword === "1234AppClick") {
+      alert("Login successful!");
+    } else {
+      alert("Invalid email or password.");
+    }
+  });
+
+    </script>
+  </body>
+</html>
