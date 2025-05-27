@@ -26,12 +26,14 @@
 
         <div class="socials">
 
-          <button>
-            <img src="./Assets/facebook-removebg-preview.png" alt=""></button>
+          <button class="facebook">
+            <img src="./Assets/facebook-removebg-preview.png" alt="">
+            Facebook
           </button>
 
-          <button>
-            <img src="./Assets/google.png" alt=""></button>
+          <button class="google">
+            <img src="./Assets/google.png" alt="">
+            Google
           </button>
 
         </div>
@@ -48,27 +50,6 @@
       </div>
     </section>
 
-
-
-    <script>
-
-    const emailInput = document.getElementById("email").value;
-    const passwordInput = document.getElementById("pswd").value;
-
-    // const validEmail = "appclick@gmail.com";
-    // const validPassword = "1234AppClick";
-
-    const validEmail = emailInput.validEmail
-    const validPassword = passwordInput.validPassword
-
-    document.getElementById("btn-login").addEventListener("click", function() {
-      if (validEmail === "appclick@gmail.com" && validPassword === "1234AppClick") {
-      alert("Login successful!");
-    } else {
-      alert("Invalid email or password.");
-    }
-  });
-
-    </script>
+<script src="index.js"></script>
   </body>
 </html>

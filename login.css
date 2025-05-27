@@ -51,6 +51,7 @@ section {
   position: absolute;
   bottom: 10px;
   color: white;
+  outline-color: black;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -132,37 +133,32 @@ p {
   gap: 20px;
 }
 
-.socials button img {
-  font-size: 10px;
+.socials img {
   width: 20px;
-  /* padding: 5px 0px 1px 1px;
-  padding-bottom: 5px; */
   align-items: center;
-  border-color: none;
-  justify-content: center;
-  padding-top: 6px;
+  position: absolute;
+  left: 10px;
+  bottom: 3px;
+  right: 5px;
 }
 
 .socials button {
+  position: relative;
   border: 2px solid #e6dbdb;
   border-radius: 2px;
   background-color: white;
   margin-bottom: 10px;
   justify-content: center;
   width: 80%;
+  padding: 10px 10px 5px 0px;
 }
 
-/* .socials a {
+.facebook,
+.google {
+  
+  font-size: 12px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 10px;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-
- 
-} */
+}
 
 .footer button {
   align-items: center;
